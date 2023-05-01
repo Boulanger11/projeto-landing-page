@@ -6,49 +6,77 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <title>Eventos</title>
 
 </head>
-
-<body>
+    
+<body class="bg">
+    
     <header>
         <!-- <h3>TICKETS4YOU</h3> -->
-        <img class="logo" height="180" width="60" src="./midia/tickets-logo.png" alt="logo">
-        <h4>Página Inicial</h4>
+        <img class="logo" height="200" width="280" src="./midia/ticketoficial.png" alt="logo">
+        <!-- <h4>Página Inicial</h4>
         <h4>Eventos</h4>
-        <h4>Contato</h4>
-    </header>
-    <section id="section">
-        <div class="texto">
-            <br>
-            <br>
-            <br>
-            <h2>INGRESSO PARA O EVENTO WOODRUFF P.S. - SCIENCE FAIR</h2>
-            <p>Desculpe, este produto está temporariamente esgotado! Nós entendemos que você está interessado no
-                ingresso do Evento <strong>WOODRUFF P.S.</strong> e lamentamos informar que ele está temporariamente
-                indisponível. Mas não se preocupe, estamos trabalhando duro para reabastecer nosso estoque e você pode
-                ser o primeiro a saber quando estará disponível novamente. Clique em "Reserve seu Ingresso" e será
-                redirecionado ao formulário para reservar seu ingresso.</p>
+        <h4>Contato</h4> -->
 
-            <button class="botão-1" type="submit"><strong>CLIQUE AQUI!</strong></button>
-        </div>
-        <br>
-        <div class="imagem">
-            <scan></scan>
-            <img height="600" width="500" src="./midia/science 2.png" alt="show do cantor com data/horário">
-        </div>
-        <aside>
+        <nav class="minimenu">
+            <ul>
+                <li>Página Inicial</li>
+                <li class="eventos">Eventos 
+                    <ul>
+                        <li>Verão</li>
+                        <li>Primavera</li>
+                        <li>Inverno</li>
+                        <li>Outono</li>
+                    </ul>
+                </li>
+                <li>Contato</li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <section id="section">
+
+            <div class="texto">
+                <h1><strong>EVENTO PRINCIPAL</strong></h1>
+                <h2>INGRESSO PARA O EVENTO DE/LY BELES</h2>
+                <h4>Data 25/10</h4>
+                <p>Desculpe, este produto está temporariamente esgotado! Nós entendemos que você está interessado no
+                    ingresso do Evento tecnológico <strong>DE/LY BELES</strong> (Evento da Música) e lamentamos informar que ele está temporariamente
+                    indisponível. Mas não se preocupe, estamos trabalhando duro para reabastecer nosso estoque e você
+                    pode
+                    ser o primeiro a saber quando estará disponível novamente. Clique em "Reserve seu Ingresso" e será
+                    redirecionado ao formulário para reservar seu ingresso.</p>
+
+                <button class="botão-1" id="meubotao-1" onclick="irParaFormulario(event)"><strong>CLIQUE AQUI!</strong></button>
+            </div>
             <br>
-            <p>colocar outros eventos com data</p>
-        </aside>
-    </section>
+            <div class="imagem">
+                <scan></scan>
+                <img height="800" width="700" src="./midia/img 1.png" alt="show do cantor com data/horário">
+            </div>
+            <div class="conteiner" id="conteiner">
+                <h3>Outros Eventos:</h3>
+            <aside class="item"><img height="120" width="100" src="./midia/img2.png
+" alt="evento tecnológico 1"><br>EVENTO TECONOLÓGICO DAS CAMÊRAS <br> <p>Ingressos a partir de R$ 120,00</p></aside></aside>
+            
+            <aside class="item"><img height="120" width="100" src="./midia/evento tecno 2.png" alt="evento tecnológico 1"><br>EVENTO TECONOLÓGICO DAS ARTES <br> <p>Ingressos a partir de R$ 160,00</p></aside>
+            
+            <aside class="item"><img height="120" width="100" src="./midia/evento tecno 3.png" alt="evento tecnológico 1"><br>EVENTO TECONOLÓGICO DA SUSTENTABILIDADE <br> <p>Ingressos a partir de R$ 80,00</p> </aside>
+            
+        </div>
+        </section>
+    </main>
     <br>
-    <form>
+    
+    <form id="meuFormulario">
         <label for="Nome-Completo">Nome Completo</label>
         <input placeholder="Digite seu Nome Completo" type="text" id="Nome-Completo" required>
         <br>
-        <label for="Idade">Idade</label>
-        <input placeholder="Digite sua Idade" type="number" id="Idade" required>
+        <label for="Data">Data de Nascimento</label>
+        <input type="date" id="Date" required>
         <br>
         <label for="Telefone">Telefone</label>
         <input placeholder="Digite seu Telefone" type="number" id="Telefone" required>
@@ -56,11 +84,15 @@
         <label for="E-mail">E-mail</label>
         <input placeholder="Digite seu E-mail" type="text" id="E-mail" required>
         <br>
-        <button class="botão-2" type="submit"><strong>RESERVE SEU INGRESSO</strong></button>
+        <button class="botão-2" onclick="reservar(event)"><strong>RESERVE SEU INGRESSO</strong></button>
     </form>
-    
 
+    <footer>
+        <img class="face" height="32" src="./midia/face.png" alt="facebook">
+        <img class="insta" height="60" src="./midia/instagram.png" alt="instagram">
+        <img class="twitter" height="60" src="./midia/twitter.logo.png" alt="twitter">
+    </footer>
 </body>
-<footer>footer</footer>
+
 
 </html>
