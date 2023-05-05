@@ -11,7 +11,7 @@ const reservar = (event) =>{
     const email = emailInput.value
 
     if (email.length > 0) {
-        alert(`Entraremos em contato através do ${email}`)
+        alert(`Entraremos em contato através do e-mail registrado: ${email}`)
     }else {
         alert(`Por favor, digite um e-mail valido.`)
     }
