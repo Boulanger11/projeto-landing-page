@@ -37,7 +37,8 @@ header {
 
 .logo {
     /* width: 30%; */
-    margin-bottom: 2vh;
+    margin-bottom: 1vh;
+    cursor: pointer;
 }
 
 .minimenu{
@@ -45,31 +46,39 @@ header {
     font-family: "neon";
     -webkit-text-stroke: 1px rgb(253, 253, 253);
     color: rgb(107, 206, 233);
+    cursor: pointer;
        
 }
 .minimenu ul li {
     display: inline-block;
     padding: 1vh;
-    
+    border-radius: 15px;
 }
 .minimenu ul li:hover {
-    background-color: aquamarine;
-}
-.minimenu ul ul li:hover {
     background-color: lightseagreen;
 }
-.minimenu ul ul {
-    display: none;
-    margin-top: 1vh;
+.minimenu ul ul li:hover {
+    background-color: rgb(64, 214, 207);
 }
-.minimenu ul li:hover>ul {
-    display: block;
+.minimenu ul ul {
+    font-size: 2.5vh;
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 8vh;
+    margin-right: 44.6vh; 
+}
+.minimenu ul li:hover > ul {
+    display: flex;
+    flex-direction: column;
 }
 
-.eventos {
+/* .eventos ul{
 display: flex;
-flex-direction: column;
-}
+flex-direction: row;
+
+} */
 
 section {
     display: flex;
@@ -127,11 +136,13 @@ h4 {
     width: 20%;
     
 }
-
+img {
+    cursor: pointer;
+}
 .imagem {
     width: 50%;
     margin-top: 1vh;
-   
+    /* cursor: pointer; */
 }
 
 .conteiner {
@@ -139,7 +150,9 @@ h4 {
     flex-direction: column;
     flex-wrap: wrap;
     gap: 70px;
-    width: 130px;
+    width: 100px;
+    align-items: center;
+
     
 }
 
@@ -154,12 +167,13 @@ h3 {
     box-shadow: 0px 0px 7px rgb(76, 219, 255);
     border-radius: 5px;
     text-align: center; 
-    margin-top: 8vh;   
+    margin-top: 8vh;
 }
 aside p {
     font-size: 25px;
     text-align: center;
     color: yellow;
+    cursor: pointer;
 }
 
 
@@ -194,7 +208,7 @@ form {
     color: black;
     border: 5px dashed rgb(10, 61, 75);
     height: 500px;
-    width: 700px;
+    width: 800px;
     text-align: left;
     padding: 25px;
     font-size: 25px;
@@ -243,13 +257,96 @@ footer {
 
 @media screen and (min-device-width: 320px) and (max-device-width: 480px) {
 
+    * {
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
     header {
         display: flex;
         flex-direction: row;
+        justify-content: space-around;
 }
-/*  body {
+    .logo {
+        height: auto;
+        width: 40%;
+}
+    .minimenu {
+        font-size: 12px;
+    }
+
+    .section {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;      
+    }
+    .texto {
+        width: 100%;
+    }
+    div h1 {
+        margin-top: 3vh;
+        font-size: 4vh;
+        margin: 1vh;
+    }
+    div h2, div h4 {
+        margin: 2vh;
+        font-size: 3vh;
+        margin: 3vh;
+
+    }
+    div p {
+        font-size: 3vh;
+        text-align: justify;
+        margin: 3vh;
+    }
+    .botão-1 {
+        font-size: 3vh;
+        width: 220px;
+        margin: 2vh;
+
+    }
+
+    div img {
+        height: 600px;       
+    }
+    .imagem {
+        width: 20px;
+        height: 50px;
+    }
+
+    .conteiner {
+        width: 100%;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-    } */
+        align-items: center;
+        gap: 40px;
+    }
+
+    aside {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 250px;
+    } 
+    h3 {
+        border: 1px solid rgb(0, 217, 255);
+        border-radius: 10px;
+        width: 50%;
+        text-align: center;
+    }
+    p {
+        cursor: pointer;
+    }
+
+    form {
+        height: 480px;
+        width: 80%;
+    }
+    
 }
