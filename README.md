@@ -1,3 +1,6 @@
+LINK: honorable-mom.surge.sh
+
+
 # Landing Page
 Nesse projeto, nosso objetivo é criar uma **Landing Page**, ou seja, um site de **apenas uma página** cujo objetivo é atrair clientes e despertar curiosidade e interesse nos serviços e/ou produtos de uma empresa.
 Durante a construção desse site, serão estudados e praticados os seguintes conteúdos:
@@ -124,9 +127,15 @@ A sua Landing Page deve conter:
 ### Instruções de entrega
 
 ![image](https://user-images.githubusercontent.com/71137294/227530610-a9172cf5-a346-49ec-ac76-e95b207f97b4.png)
-1.  [Crie o surge](https://vimeo.com/534588331/cb38435bad?embedded=true&source=vimeo_logo&owner=108074337) do seu projeto e pegue o link da publicação(deploy);
+1. LINK: lacking-flavor.surge.sh
+ [Crie o surge](https://vimeo.com/534588331/cb38435bad?embedded=true&source=vimeo_logo&owner=108074337) do seu projeto e pegue o link da publicação(deploy); 
 2.  Adicione o link do surge no README do seu projeto;
 3.  Tire print das páginas do seu projeto, na versão desktop e mobile e cole no README;
 4.  Abra um novo Pull Request (PR) com a frase **PR para correção**. Caso não saiba como fazê-lo, assista a esse [vídeo](https://www.canva.com/design/DAFY4nS5W2c/t92uFMR61YtmA7bCwj2S1Q/watch).
 5.  Envie o link do seu PR e do surge no [formulário de entrega](https://forms.gle/nrh5KpDhAMwXBjC29).
 
+
+LINK surge: honorable-mom.surge.sh
+
+![site desktop.png](./midia/site%20desktop.png)
+![site mobile.png](./midia/site%20mobile.png)
