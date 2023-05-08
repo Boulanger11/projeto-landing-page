@@ -135,5 +135,6 @@ A sua Landing Page deve conter:
 LINK surge: honorable-mom.surge.sh
 
 ![site desktop.png](./midia/site%20desktop.png)
+![site desktop 2.png](./midia/site%20desktop%202.png)
 ![site mobile.png](./midia/site%20mobile.png)
 ![site mobile 2.png](./midia/site%20mobile%202.png)
