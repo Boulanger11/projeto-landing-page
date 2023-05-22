@@ -1,7 +1,4 @@
-LINK: honorable-mom.surge.sh
-
-
-# Landing Page
+git# Landing Page
 Nesse projeto, nosso objetivo é criar uma **Landing Page**, ou seja, um site de **apenas uma página** cujo objetivo é atrair clientes e despertar curiosidade e interesse nos serviços e/ou produtos de uma empresa.
 Durante a construção desse site, serão estudados e praticados os seguintes conteúdos:
 * HTML
@@ -138,4 +135,6 @@ A sua Landing Page deve conter:
 LINK surge: honorable-mom.surge.sh
 
 ![site desktop.png](./midia/site%20desktop.png)
+![site desktop 2.png](./midia/site%20desktop%202.png)
 ![site mobile.png](./midia/site%20mobile.png)
+![site mobile 2.png](./midia/site%20mobile%202.png)
